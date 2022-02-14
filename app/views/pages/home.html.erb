@@ -1,3 +1,15 @@
 <h1>This is our super cool home page 🏡</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit culpa at tempora illum sed, suscipit inventore commodi officia eos excepturi cumque nemo, eum quasi, libero alias numquam magni rerum.</p>
 
+<form action="/" method="get">
+  <input type="text" name="member" placeholder="<%= params[:member] %>">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @members.each do |person| %>
+      <li><%= person.capitalize %></li>
+  <% end %>
+</ul>
+
+<%= link_to "About Link", banana_path %>

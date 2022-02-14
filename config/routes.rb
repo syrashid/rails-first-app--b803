@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   # Verb 'path', to: 'controller#action'
   root to: 'pages#home'
 
-  get 'about', to: 'pages#about'
+  get 'about', to: 'pages#about', as: :banana
 end
